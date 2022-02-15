@@ -1,0 +1,8 @@
+<h1><%= @task.title %></h1>
+<%= link_to "Edit task", edit_path %>
+<div class="grey">
+  <%= @task.details %>
+</div>
+<p><i class="<%= @checkbox %>"></i> <%= @text %></p>
+<hr class="rounded">
+<%= link_to 'Back to the list', tasks_path %>
